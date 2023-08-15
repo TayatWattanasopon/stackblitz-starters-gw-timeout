@@ -6,7 +6,7 @@ const app = express();
 app.get('/simulate-timeout', (req, res) => {
   // Introduce a delay before responding to simulate a timeout
   setTimeout(() => {
-    res.status(503).send('Gateway Time-out');
+    res.status(504).send('Gateway Time-out');
   }, 10000); // Simulating a 10-second delay
 });
 
